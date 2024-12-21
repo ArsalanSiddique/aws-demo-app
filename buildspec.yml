@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      - apt-get update && apt-get install nginx -y
+  pre_build:
+    commands:
+      - echo "Building the project..."
+      - echo "Build phase complete."
+  build:
+    commands:
+      - echo "Building the project..."
+      - echo "Build phase complete."
+  post_build:
+    commands:
+      - echo "Running post-build commands..."
+      - echo "Build completed successfully."
+
+artifacts:
+  files:
+    - '**/*' # Include all files
