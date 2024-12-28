@@ -21,4 +21,3 @@ phases:
 artifacts:
   files:
     - '**/*' # Include all files
-  base-directory: /var/www/html  # Set base directory for Apache
